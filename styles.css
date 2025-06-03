@@ -115,4 +115,53 @@ a {
     text-decoration: none;
     color: #4d7ea8;
     }
+    #code-sample-section {
+        padding: 1.5em;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-top: 2em;
+    }
+    
+    .section-title {
+        font-size: 1.8em;
+        margin-bottom: 0.5em;
+    }
+    
+    .description {
+        font-size: 1em;
+        color: #333;
+        margin-bottom: 1em;
+    }
+    
+    .code-container {
+        background-color: #2d2d2d;
+        color: #f8f8f2;
+        padding: 1em;
+        border-radius: 6px;
+        overflow-x: auto;
+        font-family: monospace;
+        white-space: pre;
+    }
+    
+    .python-code .keyword { color: #66d9ef; font-weight: bold; }
+    .python-code .function { color: #a6e22e; }
+    .python-code .parameter { color: #fd971f; }
+    .python-code .string { color: #e6db74; }
+    .python-code .comment { color: #75715e; font-style: italic; }
+    .python-code .number { color: #ae81ff; }
+
+    .scene-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        border: 3px solid #fff;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+    }
+    
+    .scene-image:hover { 
+        transform: scale(1.02);
+    }
    
+
