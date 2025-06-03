@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ned Houlihan </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Turtle Project</h1>
+    </header>
+
+  
+    <section>
+        <h2>About the Project</h2>
+        <p>This project is about creating a scene using Python’s Turtle graphics module. I used blocks such as 
+a rectangle, triangle, curve, and a V shape to make a scene of a boat on water with abird abouve it. This 
+project demonstrates how to use basic shapes to create a more complex scene, showcasing the power of Turtle graphics for drawing and animation.</p>
+    </section>
+
+   
+</p>
+    </section>
+
+    
+    <section id="code-sample-section" class="section sample-code">
+        <h2 class="section-title">Sample Code</h2>
+        <p class="description">
+            This function draws a scene using Turtle graphics, combining shapes and curves to form a sailboat on water with birds in the sky:
+            <br><br>
+            • <strong>t</strong>: The turtle graphics object for drawing<br>
+            • Uses helper functions to create filled shapes, curves, and custom placements<br>
+            • Demonstrates composition of visual elements into a complete scene
+        </p>
+        
+        <div class="code-container">
+            <code class="python-code"><span class="keyword">def</span> <span class="function">draw_scene</span>(<span class="parameter">t</span>):
+        <span class="comment">"""Draw a colorful scene with a sailboat and birds."""</span>
+        <span class="function">screen</span> = <span class="parameter">t.getscreen</span>()
+        screen.<span class="function">bgcolor</span>(<span class="string">"skyblue"</span>)
+        
+        <span class="comment"># Draw ship hull and sail</span>
+        <span class="function">draw_rectangle</span>(<span class="parameter">t</span>, <span class="number">300</span>, <span class="number">100</span>, <span class="string">"brown"</span>)
+        <span class="function">jump_to</span>(<span class="parameter">t</span>, <span class="number">87.5</span>, <span class="number">0</span>)
+        <span class="function">draw_triangle</span>(<span class="parameter">t</span>, <span class="number">125</span>, <span class="string">"blue"</span>)
+    
+        <span class="comment"># Draw curved water line</span>
+        <span class="function">jump_to</span>(<span class="parameter">t</span>, <span class="number">-200</span>, <span class="number">-78</span>)
+        <span class="function">draw_curve</span>(<span class="parameter">t</span>, length=<span class="number">525</span>, curve_factor=<span class="number">6</span>, segments=<span class="number">100</span>)
+    
+        <span class="comment"># Draw birds (V shapes)</span>
+        <span class="function">jump_to</span>(<span class="parameter">t</span>, <span class="number">-100</span>, <span class="number">150</span>)
+        t.<span class="function">setheading</span>(<span class="number">45</span>)
+        t.<span class="function">forward</span>(<span class="number">20</span>)
+        t.<span class="function">backward</span>(<span class="number">20</span>)
+        t.<span class="function">setheading</span>(<span class="number">135</span>)
+        t.<span class="function">forward</span>(<span class="number">20</span>)
+        t.<span class="function">backward</span>(<span class="number">20</span>)
+    </code>
+        </div>
+    </section>
+    
+    
+        
+    
+    <section>
+        <h2>Final Scene</h2>
+        <p>Here's the completed turtle graphics scene featuring two boats, some waves and three birds:</p>
+        
+        <div class="scene-container">
+            <img src="Boat.png" alt="Turtle Graphics Scene - Two boats, 3 birds, and some waves" class="scene-image">
+        </div>
+        
+        <p class="scene-description">
+            The scene combines multiple composite shapes created from basic turtle graphics functions. The boats use rectangles and triangles, while the birds are represented by V shapes. The waves are created using curves, demonstrating how Turtle graphics can be used to create complex scenes from simple shapes.
+        </p>
+    </section> 
+
+
+</body>
+</html>
